@@ -57,3 +57,11 @@ seq6     0.8070
 ## Notice
 This repository contains a large `.h5` model file that are managed using **Git Large File Storage (Git LFS)**.
 Please ensure you have **Git LFS** installed and configured before cloning or pulling the repository to correctly handle these large files.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## Citation
+If you use this code in your research, please cite our paper:
+
+> Zhou L. et al., *eccDNA2Ca: An Ensemble Deep Learning Framework for Interpretable Prediction of Cancer-Associated Extrachromosomal Circular DNA*, 2025.

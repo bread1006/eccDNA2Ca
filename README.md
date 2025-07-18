@@ -39,15 +39,20 @@ python main.py --fasta_file <fasta_path> --xgb_features_file <feature_matrix>  #
 - `--xgb_features_file`: Path to feature matrix Excel file for XGBoost (optional).
 
 ## Example usage 
-``bash 
+```bash
 python main.py --fasta_file ExternalValidation_eccDNA.fasta --xgb_features_file ExternalValidation_XGBoost_Feature_Matrix.xlsx  ## using the external validation data
 ```
 
 ## Example Output
 **ID     Predictions:**
+
 seq1     0.9722  
 seq2     0.9732  
 seq3     0.9848  
 seq4     0.8627  
 seq5     0.9703  
 seq6     0.8070  
+...
+
+## Notice
+This repository contains large `.h5` model files that are managed using **Git Large File Storage (Git LFS)**.  

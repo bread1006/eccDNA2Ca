@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-A pre-trained eccDNA2Ca model has been uploaded, so you don't need to retrain it. You can provide either or both inputs for new prediction:
+A pre-trained eccDNA2Ca model has been uploaded, so you don't need to retrain it. You can provide either or both inputs for new predictions:
 
 ```bash
 python main.py --fasta_file <fasta_path>  #Input only fasta_file for CNN module
@@ -40,7 +40,7 @@ python main.py --fasta_file <fasta_path> --xgb_features_file <feature_matrix>  #
 
 ## Example usage 
 ```bash
-python main.py --fasta_file ExternalValidation_eccDNA.fasta --xgb_features_file ExternalValidation_XGBoost_Feature_Matrix.xlsx  ## using the external validation data
+python main.py --fasta_file ExternalValidation_eccDNA.fasta --xgb_features_file ExternalValidation_XGBoost_Feature_Matrix.xlsx  # Example: run prediction with external validation data
 ```
 
 ## Example Output
@@ -55,4 +55,5 @@ seq6     0.8070
 ...
 
 ## Notice
-This repository contains large `.h5` model files that are managed using **Git Large File Storage (Git LFS)**.  
+This repository contains a large `.h5` model file that are managed using **Git Large File Storage (Git LFS)**.
+Please ensure you have **Git LFS** installed and configured before cloning or pulling the repository to correctly handle these large files.

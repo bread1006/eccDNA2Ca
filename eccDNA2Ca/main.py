@@ -5,7 +5,7 @@ from utils import eccDNA2Ca
 def main():
     parser = argparse.ArgumentParser(description="Predict eccDNA cancer association using the eccDNA2Ca model.")
     parser.add_argument("--fasta_file", type=str, help="Path to the FASTA file containing eccDNA sequences.")
-    parser.add_argument("--xgb_feature_matrix", type=str, help="Path to the Excel file containing features for XGBoost.")
+    parser.add_argument("--xgb_features_file", type=str, help="Path to the Excel file containing features for XGBoost.")
     parser.add_argument("--model_dir", type=str, default="models", help="Directory containing the trained models.")
 
     args = parser.parse_args()

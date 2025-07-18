@@ -28,11 +28,15 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-You can provide either or both inputs for prediction:
+A pre-trained eccDNA2Ca model has been uploaded, so you don't need to retrain it. You can provide either or both inputs for new prediction:
+
 ```bash
 python main.py --fasta_file <fasta_path>  #Input only fasta_file for CNN module
 python main.py --xgb_features_file <feature_matrix>  #Input only feature_file for XGBoost module
 python main.py --fasta_file <fasta_path> --xgb_features_file <feature_matrix>  #Input both 
 ```
---fasta_file: Path to eccDNA sequences in FASTA format (optional).
---xgb_features_file: Path to feature matrix Excel file for XGBoost (optional).
+- `--fasta_file`: Path to eccDNA sequences in FASTA format (optional).  
+- `--xgb_features_file`: Path to feature matrix Excel file for XGBoost (optional).
+## Example usage 
+``bash 
+

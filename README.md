@@ -62,6 +62,6 @@ Please ensure you have **Git LFS** installed and configured before cloning or pu
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## Citation
-If you use this code in your research, please cite our paper:
+If you use this code and datasets in your research, please cite our paper:
 
 > Zhou L. et al., *eccDNA2Ca: An Ensemble Deep Learning Framework for Interpretable Prediction of Cancer-Associated Extrachromosomal Circular DNA*. Manuscript in preparation, 2025.

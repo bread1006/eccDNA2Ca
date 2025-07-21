@@ -12,8 +12,15 @@ eccDNA2Ca integrates:
 
 ## Install
 ```bash
+git lfs clone https://github.com/bread1006/eccDNA2Ca.git
+cd eccDNA2Ca
+```
+OR
+```bash
 git clone https://github.com/bread1006/eccDNA2Ca.git
 cd eccDNA2Ca
+git lfs install
+git lfs pull
 ```
 
 ## Create an environment

@@ -5,7 +5,7 @@
 ## Overview
 
 eccDNA2Ca integrates:
-- **XGBoost** based on manually extracted features.
+- **XGBoost** based on extracted features.
 - **CNN** based on sequence encoding of eccDNA.
 - A **soft-voting** ensemble mechanism.
 - **Customizable input:** Accepts FASTA files and/or feature matrices.

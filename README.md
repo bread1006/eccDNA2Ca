@@ -9,6 +9,7 @@ eccDNA2Ca integrates:
 - **CNN** based on sequence encoding of eccDNA.
 - A **soft-voting** ensemble mechanism.
 - **Customizable input:** Accepts FASTA files and/or feature matrices.
+- **Optional feature extraction module:** Automatically generates feature matrices if none are available.
 
 ## Install
 ```bash
@@ -33,6 +34,27 @@ conda activate eccDNA2Ca
 ```bash
 pip install -r requirements.txt
 ```
+
+## Feature extraction (optional)
+If you do not have an existing XGBoost feature matrix, you can generate one using the provided feature extraction module:
+
+```bash
+unzip Feature_Extractor.zip -d Feature_Extractor
+cd Feature_Extractor/
+python Feature_Extractor.py \
+    --bed ExternalValidation.bed \             ## **User-provided**: BED file for your eccDNA regions
+    --fasta ExternalValidation_eccDNA.fasta \ ## **User-provided**: FASTA file corresponding to your eccDNA sequences
+    --repeat_bed hg19_repeats.bed \           ## **Pre-prepared**: BED file of repetitive regions
+    --intron_bed hg19_introns.bed \           ## **Pre-prepared**: BED file of intron regions
+    --tfbs_bed hg19_tfbs.bed \                ## **Pre-prepared**: BED file of transcription factor binding sites
+    --gtf gencode_genes_only.gtf \            ## **Pre-prepared**: GTF file of gene annotations
+    --cancer_list CancerGene_list.csv \       ## **Pre-prepared**: List of cancer-related genes
+    --out feature_matrix.csv                   ## Output feature matrix CSV for XGBoost module
+```
+Notes:
+Files marked as User-provided must be supplied by you for your specific eccDNA dataset.
+Files marked as Pre-prepared are already included in the repository or available from standard resources, and do not need to be modified.
+The output feature_matrix.csv can then be used as input to the XGBoost module of eccDNA2Ca.
 
 ## Usage
 A pre-trained eccDNA2Ca model has been uploaded, so you don't need to retrain it. You can provide either or both inputs for new predictions:

@@ -16,6 +16,9 @@ def main():
     # Load XGBoost features if provided
     xgb_features_df = None
     if args.xgb_features_file:
+        if args.xgb_features_file.endswith(".csv"):
+        xgb_features_df = pd.read_csv(args.xgb_features_file)
+     else:
         xgb_features_df = pd.read_excel(args.xgb_features_file)
 
     # Run prediction

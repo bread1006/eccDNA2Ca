@@ -88,6 +88,8 @@ seq6     0.8070
 This repository contains a large `.h5` model file that are managed using **Git Large File Storage (Git LFS)**.
 Please ensure you have **Git LFS** installed and configured before cloning or pulling the repository to correctly handle these large files.
 
+For best compatibility and performance, We recommend running eccDNA2Ca on a **Linux system**. The code and feature extraction module have been successfully tested on **Ubuntu 22.04.5**.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 

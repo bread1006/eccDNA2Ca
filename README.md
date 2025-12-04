@@ -65,7 +65,8 @@ python main.py --xgb_features_file <feature_matrix>  #Input only feature_file fo
 python main.py --fasta_file <fasta_path> --xgb_features_file <feature_matrix>  #Input both 
 ```
 - `--fasta_file`: Path to eccDNA sequences in FASTA format (optional).  
-- `--xgb_features_file`: Path to feature matrix Excel file for XGBoost (optional).
+- `--xgb_features_file`: Path to feature matrix **CSV or Excel** file for XGBoost (optional).
+
 
 ## Example usage 
 ```bash

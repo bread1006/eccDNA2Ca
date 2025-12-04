@@ -1,3 +1,4 @@
 *.h5 filter=lfs diff=lfs merge=lfs -text
 *.json filter=lfs diff=lfs merge=lfs -text
 *.pkl filter=lfs diff=lfs merge=lfs -text
+Feature_Extractor.zip filter=lfs diff=lfs merge=lfs -text

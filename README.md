@@ -43,7 +43,7 @@ unzip Feature_Extractor.zip -d Feature_Extractor
 cd Feature_Extractor/
 python Feature_Extractor.py \
     --bed ExternalValidation.bed \             ## **User-provided**: BED file for your eccDNA regions
-    --fasta ExternalValidation_eccDNA.fasta \ ## **User-provided**: FASTA file corresponding to your eccDNA sequences
+    --fasta ExternalValidation.fasta \ ## **User-provided**: FASTA file corresponding to your eccDNA sequences
     --repeat_bed hg19_repeats.bed \           ## **Pre-prepared**: BED file of repetitive regions
     --intron_bed hg19_introns.bed \           ## **Pre-prepared**: BED file of intron regions
     --tfbs_bed hg19_tfbs.bed \                ## **Pre-prepared**: BED file of transcription factor binding sites

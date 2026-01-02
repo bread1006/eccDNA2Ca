@@ -70,7 +70,7 @@ python main.py --fasta_file <fasta_path> --xgb_features_file <feature_matrix>  #
 
 ## Example usage 
 ```bash
-python main.py --fasta_file ExternalValidation_eccDNA.fasta --xgb_features_file ExternalValidation_XGBoost_Feature_Matrix.xlsx  # Example: run prediction with external validation data
+python main.py --fasta_file ExternalValidation.fasta --xgb_features_file External_feature.csv  # Example: run prediction with external validation data
 ```
 
 ## Example Output
